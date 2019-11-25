@@ -97,21 +97,19 @@
             <Button
                 android:id="@+id/btnImageCrop"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
-                android:foreground="?android:selectableItemBackground"
-                android:minWidth="150dp"
-                android:shadowRadius="10"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/btn_selector"
                 android:textColor="#ffffff" />
 
             <Button
                 android:id="@+id/btnClose"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
-                android:foreground="?android:selectableItemBackground"
-                android:minWidth="150dp"
-                android:shadowRadius="10"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/btn_selector_red"
                 android:textColor="#ffffff" />
         </RelativeLayout>
     </LinearLayout>
@@ -121,5 +119,10 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/halfTransparentBackground"
-        android:padding="100dp" />
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorPrimaryDark"
+        android:indeterminateTintMode="src_atop"
+        android:padding="160dp"
+        android:progressTint="@color/colorPrimaryDark"
+        android:visibility="invisible" />
 </RelativeLayout>

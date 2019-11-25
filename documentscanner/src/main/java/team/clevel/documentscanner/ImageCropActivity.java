@@ -136,8 +136,6 @@ public class ImageCropActivity extends Activity {
         else if (progressBar.getProgressDrawable() != null && ScannerConstants.progressColor != null)
             progressBar.getProgressDrawable().setColorFilter(Color.parseColor(ScannerConstants.progressColor), android.graphics.PorterDuff.Mode.MULTIPLY);
         setProgressBar(true);
-        btnImageCrop.setBackgroundColor(Color.parseColor(ScannerConstants.cropColor));
-        btnClose.setBackgroundColor(Color.parseColor(ScannerConstants.backColor));
         Observable.fromCallable(() -> {
             setImageRotation();
             return false;

@@ -13,9 +13,9 @@ import android.graphics.Bitmap;
 
 public class ScannerConstants {
     public static Bitmap selectedImageBitmap;
-    public static String cropText = "Crop", backText = "Back",
-            imageError = "Error while loading image",
-            cropError = "You have not selected a valid field. Please make corrections until the lines are blue.";
+    public static String cropText = "Izreži fotografiju", backText = "Odustani",
+            imageError = "Nešto je pošlo po zlu, pokušajte ponovno",
+            cropError = "Niste odabrali dobro polje za izrezati, molimo uredite dok sve točke ne postanu plave";
     public static String cropColor = "#6666ff", backColor = "#ff0000", progressColor = "#331199";
     public static boolean saveStorage = false;
 }
